@@ -1,11 +1,7 @@
 package ru.bank.account;
 
-import com.sun.tools.classfile.ConstantPool;
 import org.bitbucket.radistao.test.annotation.BeforeAllMethods;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -16,10 +12,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import ru.bank.account.entity.JPA.AccountRepo;
 import ru.bank.account.generate.GenerateDao;
 
-import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)

@@ -41,6 +41,6 @@ public class TransferRestController {
     }
 
     private void loggingResponse(EntityRs entityRs){
-        LOGGER.info("Отправлен ответ"+ entityRs);
+        LOGGER.info("Отправлен ответ "+ entityRs);
     }
 }
